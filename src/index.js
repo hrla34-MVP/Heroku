@@ -27,7 +27,7 @@ const url = process.env.MONGODB_URI || 'mongodb://localhost/geofencing-notificat
 mongoose.connect(url);
 
 app.listen({
-    port: process.env.port || 8000
+    port: process.env.PORT || 8000
 }, () => {
     console.log('Apollo Server running!');
 });
