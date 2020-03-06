@@ -23,7 +23,7 @@ server.applyMiddleware({
     path: '/graphql'
 });
 const url = 'mongodb://localhost:27017/graphql';
-mongoose.connect(url, {newURLParser: true});
+mongoose.connect(url);
 
 app.listen({
     port: process.env.port || 8000
